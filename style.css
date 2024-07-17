@@ -1,13 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-#head, a{
-    background: #303030;
-    color: white;
-    padding: 0.5%;
+body {
+  margin: 0px;
+  padding: 0px;
 }
-#firstButton{
-   margin-left: 90%; 
-   margin-bottom: 1%;
-   font-family: monospace;
+
+#main,a {
+  background: #303030;
+  color: white;
+  padding: 0.5%;
+  font-size: 25px;
+  font-weight: 600px;
+  font-family: 'inter';
+  display: flex;
+}
+.textMain{
+  text-decoration: none;
+}
+.textMain:hover{
+  transition: .2s;
+  text-decoration-color: #3b82f6;
+  font-weight: bold;
+}
+.textMain:hover{
+  color:#0053d8ce;
+}
+#menu {
+  text-align: center;
+  margin-top: 1.4%;
+  display: flex;
+  width: 55%;
+  justify-content: space-around;/* dividir de forma igualitaria dentro da div */
+  
+}
+
+#firstButton {
+  font-family: 'inter';
+  margin-top: 1%;
+  margin-left: 38%;
+  margin-bottom: 2%;
   background-color: #f3f7fe;
   color: #3b82f6;
   border: none;
@@ -16,8 +47,11 @@
   height: 45px;
   transition: .3s;
 }
+
 #firstButton:hover {
+  font-weight: bold;
   background-color: #3b82f6;
   box-shadow: 0 0 0 5px #3b83f65f;
   color: #fff;
 }
+
