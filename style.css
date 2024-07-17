@@ -5,7 +5,8 @@ body {
   padding: 0px;
 }
 
-#main,a {
+#main,
+a {
   background: #303030;
   color: white;
   padding: 0.5%;
@@ -14,24 +15,28 @@ body {
   font-family: 'inter';
   display: flex;
 }
-.textMain{
+
+.textMain {
   text-decoration: none;
 }
-.textMain:hover{
+
+.textMain:hover {
   transition: .2s;
   text-decoration-color: #3b82f6;
   font-weight: bold;
 }
-.textMain:hover{
-  color:#0053d8ce;
+
+.textMain:hover {
+  color: #0053d8ce;
 }
+
 #menu {
   text-align: center;
   margin-top: 1.4%;
   display: flex;
   width: 55%;
-  justify-content: space-around;/* dividir de forma igualitaria dentro da div */
-  
+  justify-content: space-around;
+  /* dividir de forma igualitaria dentro da div */
 }
 
 #firstButton {
@@ -55,3 +60,53 @@ body {
   color: #fff;
 }
 
+#information {
+  text-align: center;
+  background-color: #303030;
+  background: linear-gradient(180deg, #0b57bbfb 50%, rgba(48,48,48,1) 100%);
+  padding: 2%;
+  padding-bottom: 5%;
+  margin-top: 1px;
+  
+}
+#information>p{
+  font-family: 'inter';  
+  font-weight: 400px;
+  font-size: 40px;
+  line-height: 48.41px;
+  color: #FFFFFF;
+}
+#information>h1 {
+  font-family: 'inter';
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 96.82px;
+  color: #FFFFFF;
+}
+span{
+  font-weight: 700;
+  background-color: #303030;
+}
+#loginPage{
+  padding-top: 5%;
+  background-color: #303030;
+  text-align: center;
+}
+input {
+  margin: 30px;
+  background: #FFFFFF;
+  border: none;
+  outline: none;
+  max-width: 350%;
+  padding: 10px 20px;
+  font-size: 200%;
+  border-radius: 10px;
+  box-shadow: inset 2px 5px 10px rgb(105, 105, 105);
+}
+#longinPage,label,p{
+  color: #FFFFFF;
+  font-size: 'inter';
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36.31px;
+}
