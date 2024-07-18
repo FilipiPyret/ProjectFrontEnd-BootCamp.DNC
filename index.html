@@ -19,33 +19,50 @@
         <button id="firstButton">Login</button>
     </nav>
     <!--cabeçalho-->
-    <div id="information">
-        <h1>BOOTCAMP DNC</h1>
-        <p>Esse será um evento exclusivo para todos os alunos <br>
-            da <b>DNC</b>, que querem <span>acelerar a carreira</span> com uma <br>
-            semana intensiva de conteúdo de mercado entre <br>
-            <span>BACK-END, FRONT-END & BANCO DE DADOS.</span>
-        </p>
-    </div>
-    <!--formulário-->
-    <div id="loginPage">
-        <div>
-            <label for="">Nome:</label> <br>
-            <input class="input" type="text" placeholder="Insira seu nome aqui"> <br>
-            <label for="">Sobrenome:</label> <br>
-            <input class="input" type="text" placeholder="Insira seu sobrenome aqui"> <br>
-            <p>Área de Interesse:</p>
-            <input type="checkbox"> Front-Endd
-            <input type="checkbox"> Back-End
-            <input type="checkbox"> Banco de Dados <br>
-            <label for="">E-mail:</label> <br>
-            <input class="input" type="text" placeholder="Insira seu e-mail aqui"> <br>
-            <label for="">Telefone:</label> <br>
-            <input class="input" type="number" placeholder="(99) 99999-9999"> <br>
-            <label for="">Insira uma frase criativa aqui:</label> <br>
-            <input class="input" type="text" placeholder="Qual frase criativa você gostaria de falar? :)"> <br>
-        </div>    
-    </div>
+    <section>
+        <header id="information">
+            <h1>BOOTCAMP DNC</h1>
+            <p>Esse será um evento exclusivo para todos os alunos <br>
+                da <b>DNC</b>, que querem <span>acelerar a carreira</span> com uma <br>
+                semana intensiva de conteúdo de mercado entre <br>
+                <span>BACK-END, FRONT-END & BANCO DE DADOS.</span>
+            </p>
+        <!--formulario-->
+        </header>
+        <form id="loginPage" action="">
+            <div class="formGroup"  >
+                <label for="">Nome:</label> <br>
+                <input class="inputText" type="text" placeholder="Insira seu nome aqui"> <br>
+            </div>
+            <div class="formGroup">
+                <label for="">Sobrenome:</label> <br>
+                <input class="inputText" type="text" placeholder="Insira seu sobrenome aqui"> <br>
+            </div>
+            <div class="formGroup">
+                <label>Área de Interesse:</label>
+                <div id="checkboxItens">
+                    <input type="checkbox">
+                    <label for="">Front-End</label>
+                    <input type="checkbox">
+                    <label for="">Back-End</label>
+                    <input type="checkbox">
+                    <label for="">Banco de Dados</label>
+                </div>
+                <div id="email" class="formGroup">
+                    <label >E-mail:</label> <br>
+                    <input class="inputText" type="email" placeholder="Insira seu e-mail aqui"> <br>
+                </div>
+                <div class="formGroup">
+                    <label for="">Telefone:</label> <br>
+                    <input class="inputText" type="number" placeholder="(99) 99999-9999"> <br>
+                </div>
+                <div class="formGroup">
+                    <label for="">Insira uma frase criativa aqui:</label> <br>
+                    <input class="inputText" type="text" placeholder="Qual frase criativa você gostaria de falar? :)"> <br>
+                </div>
+                <button id="secondButton">Cadastrar</button>
+        </form>
+    </section>
     <!--rodapé-->
     <footer>
         <div>
