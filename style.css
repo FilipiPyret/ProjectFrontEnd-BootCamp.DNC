@@ -19,9 +19,12 @@ a {
 
 .textMain {
   text-decoration: none;
+  background-color: #303030;
 }
 
 .textMain:hover {
+  border-radius: 8px;
+  background-color: #4a87d6;
   transition: .2s;
   text-decoration-color: #3b82f6;
   font-weight: bold;
@@ -200,12 +203,74 @@ footer h3{
   padding: 3%;
 }
 #conclusion{
+  display: flex;
+  justify-content: center;
   background-color: #0C70F2;
   margin-top: -4%;
   text-align: center; 
   margin-bottom: -1000%;
 }
-#error{
-  text-align: center;
-  margin-left: 1%;
+#conclusion a:first-child{
+  border-right: 3px solid white;
+}
+
+@media only screen and (max-width: 600px){
+  #main{
+    flex-direction: column;
+    height: auto;
+  }
+  .textMain{
+    margin-left: 2%;
+    margin-top: 0px;
+    padding: 0%;
+    font-size: 20px;
+  }
+  .textMain:hover{
+    text-decoration: underline;
+    border-radius: 8px;
+    background-color: #4a87d6;
+    transition: .2s;
+    text-decoration-color: #3b82f6;
+    font-weight: bold;
+  }
+  #menu{
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+  }
+  #menu a{
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  #main button{
+    align-items: center;
+    width: 90%;
+    margin: 5%;
+  }
+  #information h1{
+  font-size: 50px;
+  }
+  #information p{
+    font-size: 30px;
+    }
+  #loginPage{
+    padding: 15px;
+    margin-bottom: -110px;
+    }
+  .inputText{
+    width: 93%
+  }
+  #loginPage label{
+    font-size: 25px;
+  }
+  #loginPage input{
+    font-size: 18px;
+  }
+  #checkboxItens label{
+    font-size: 16px;
+  }
+  footer{
+    flex-direction: column;
+  }
 }
